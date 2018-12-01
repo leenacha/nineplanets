@@ -1,4 +1,5 @@
 class PictureUploader < CarrierWave::Uploader::Base
+  include Cloudinary::Carrierwave
 
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
