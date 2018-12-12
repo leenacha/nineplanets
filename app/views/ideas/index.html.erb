@@ -3,6 +3,12 @@
 <h1>Ideas</h1>
 
 <table>
+  <colgroup>
+      <col span="1" style="width: 20%;">
+      <col span="1" style="width: 40%;">
+      <col span="1" style="width: 30%;">
+      <col span="1" style="width: 10%;">
+   </colgroup>
   <thead>
     <tr>
       <th>Name</th>
@@ -17,7 +23,7 @@
       <tr>
         <td><%= idea.name %></td>
         <td><%= idea.description %></td>
-        <td><%= image_tag(idea.picture_url, width: '15%', alt: idea.name) if idea.picture.present? %></td>
+        <td><%= image_tag(idea.picture_url, width: '45%', alt: idea.name) if idea.picture.present? %></td>
         <td><%= link_to 'Show', idea %></td>
         <td><%= link_to 'Edit', edit_idea_path(idea) %></td>
         <td><%= link_to 'Destroy', idea, method: :delete, data: { confirm: 'Are you sure?' } %></td>
